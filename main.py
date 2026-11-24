@@ -69,7 +69,7 @@ def _env(name, default=None, required=False):
 
 BOT_TOKEN = _env("BOT_TOKEN", required=True)
 ADMIN_IDS = {int(x.strip()) for x in _env("ADMIN_IDS", "").split(",") if x.strip()}
-DEV_NAME = _env("DEV_NAME", "FELIX")
+DEV_NAME = _env("DEV_NAME", "ABDO")
 AI_API_KEY = _env("AI_API_KEY", "")
 AI_API_URL = _env("AI_API_URL", "https://api.xkiro.com/v1/chat/completions")
 AI_MODEL = _env("AI_MODEL", "mistralai/mistral-large-2512")
